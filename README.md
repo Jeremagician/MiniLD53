@@ -28,8 +28,8 @@ From now, there is no needs to invoke `cmake ..` again.  To build the project, j
 
 *TODO*
 
-# Author #
+# Authors #
 
 * Brahim Berkati
-* Jeremy Derdaele
+* Jérémy Derdaele
 * Timothée Vialatoux
