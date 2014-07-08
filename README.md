@@ -6,6 +6,6 @@ Brainstorming, brainstorming...
 
 # Author #
 
-* Timothée Vialatoux
-* Jeremy Derdaele
 * Brahim Berkati
+* Jeremy Derdaele
+* Timothée Vialatoux
