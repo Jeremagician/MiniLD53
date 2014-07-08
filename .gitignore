@@ -1,0 +1,4 @@
+/build
+/bin
+*~
+*.o # Ok ça devrais pas arriver
