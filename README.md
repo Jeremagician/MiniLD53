@@ -14,19 +14,27 @@ It is cleaner to build in a separate directory rather than the root directory.  
 
 First, create the directory:
 
-`$ mkdir build && cd build`
+```sh
+$ mkdir build && cd build
+```
 
 BASH masters will enter the following:
 
-`$ mkdir build && cd !:1`
+```sh
+$ mkdir build && cd !:1
+```
 
 Once in the build directory, invoque cmake:
 
-`$ cmake ..`
+```sh
+$ cmake ..
+```
 
 From now, there is no needs to invoke `cmake ..` again.  To build the project, just use `make`.
 
-`$ make`
+```sh
+$ make
+```
 
 ## Windows ##
 
