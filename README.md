@@ -14,7 +14,7 @@ It is cleaner to build in a separate directory rather than the root directory.  
 
 First, create the build directory:
 ```sh
-$ mkdir build && cd !:1
+$ mkdir build && cd build
 ```
 
 Once in the build directory, invoque `cmake`:
