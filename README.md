@@ -6,5 +6,6 @@ Brainstorming, brainstorming...
 
 # Author #
 
-Leader: Timothée Vialatoux
-Slaves: Jeremy Derdaele, Brahim Berkati
+* Timothée Vialatoux
+* Jeremy Derdaele
+* Brahim Berkati
