@@ -4,8 +4,8 @@
 
 Brainstorming, brainstorming...
 
-# Author #
+# Authors #
 
 * Brahim Berkati
-* Jeremy Derdaele
+* Jérémy Derdaele
 * Timothée Vialatoux
