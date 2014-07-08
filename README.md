@@ -12,26 +12,17 @@ The project use CMake, see the CMake HOWTO for your OS and IDE.
 
 It is cleaner to build in a separate directory rather than the root directory.  It avoid to have a lot of junk files in the root directory.  In the following, this directory is called `build`.
 
-First, create the directory:
-
-```sh
-$ mkdir build && cd build
-```
-
-BASH masters will enter the following:
-
+First, create the build directory:
 ```sh
 $ mkdir build && cd !:1
 ```
 
-Once in the build directory, invoque cmake:
-
+Once in the build directory, invoque `cmake`:
 ```sh
 $ cmake ..
 ```
 
 From now, there is no needs to invoke `cmake ..` again.  To build the project, just use `make`.
-
 ```sh
 $ make
 ```
