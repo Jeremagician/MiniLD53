@@ -32,7 +32,7 @@ $ make
 It's basically the same way under linux, using CMake GUI make it pretty simple.
 Generate project file into a build directory (previously created).
 
-If a librarie isn't automatically found you have to provide her path.
+If a library isn't automatically found you have to provide her path.
 
 ### Visual Studio ###
 
