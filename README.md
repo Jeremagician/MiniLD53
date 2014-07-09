@@ -29,7 +29,19 @@ $ make
 
 ## Windows ##
 
-*TODO*
+It's basically the same way under linux, using CMake GUI make it pretty simple.
+Generate project file into a build directory (previously created).
+
+If a librarie isn't automatically found you have to provide her path.
+
+### Visual Studio ###
+
+If you use visual studio, you just have to choose MSVC generator.
+It will give you a visual studio project (.sln)
+
+### Makefile ###
+
+You can also generate Makefile if you use either Cygwin or MinGW
 
 # Authors #
 
