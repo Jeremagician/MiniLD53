@@ -1,6 +1,5 @@
 include_directories(
   ${SFML_INCLUDE_DIR}
-  ${BOX2D_INCLUDE_DIR}
 )
 
 
@@ -18,5 +17,4 @@ target_link_libraries(
   minild
   ${SFML_LIBRARIES}
   ${SFML_DEPENDENCIES}
-  ${BOX2D_LIBRARY}
 )
