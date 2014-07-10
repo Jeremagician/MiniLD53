@@ -4,7 +4,7 @@
 Commande *multi plate-forme* pour convertir tout les *.xcf du dossier en png.
 Pratique pour de l'output d'assets automatisé.
 
-```
+```sh
 gimp -n -i -b - <<EOF
 (let* ( (file's (cadr (file-glob "*.xcf" 1))) (filename "") (image 0) (layer 0) )
   (while (pair? file's)
