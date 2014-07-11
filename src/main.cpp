@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include "Game.h"
 #include <SFML/Graphics.hpp>
 
 using namespace std;
@@ -7,7 +8,7 @@ using namespace sf;
 
 int main(void)
 {
-	RenderWindow window(VideoMode(1000,800), "MiniLD 53!");
+	/*RenderWindow window(VideoMode(800,600), "MiniLD 53!");
 
 	while(window.isOpen())
 	{
@@ -29,7 +30,8 @@ int main(void)
 		window.clear();
 
 		window.display();
-	}
+	} */
 
+	Game::Start();
 	return EXIT_SUCCESS;
 };
