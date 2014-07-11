@@ -6,6 +6,7 @@ include_directories(
 set(
   minild_sources
   main.cpp
+  map.cpp map.hpp
 )
 
 add_executable(

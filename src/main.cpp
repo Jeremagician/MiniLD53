@@ -1,34 +1,21 @@
 #include <iostream>
 #include <cstdlib>
 #include <SFML/Graphics.hpp>
+#include "map.hpp"
 
 using namespace std;
 using namespace sf;
 
 int main(void)
 {
-	RenderWindow window(VideoMode(1000,800), "MiniLD 53!");
+	Map map;
+	ifstream file("../proposal/file_format.txt");
 
-	while(window.isOpen())
-	{
-		Event event;
-		while(window.pollEvent(event))
-		{
-			switch(event.type)
-			{
-			case Event::Closed:
-				window.close();
-				break;
-			case Event::KeyReleased:
-				if(event.key.code == Keyboard::Escape)
-					window.close();
-				break;
-			}
-		}
-
-		window.clear();
-
-		window.display();
+	try {
+		map << file;
+		map >> cout;
+	} catch (string &str) {
+		cerr << str;
 	}
 
 	return EXIT_SUCCESS;
