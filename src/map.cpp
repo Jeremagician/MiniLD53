@@ -88,7 +88,14 @@ void Map::operator>>(std::ostream &stream)
 
 	for (y = 0; y < this->height; y++) {
 		for (x = 0; x < this->width; x++) {
-			stream << tile_to_char(this->tiles[y][x]);
+			char c;
+
+			try {
+				c = tile_to_char(this->tiles[y][x]);
+			} catch (string &str) {
+				throw EH(x + 1, y + 1) + str;
+			}
+			stream << c;
 		}
 		stream << endl;
 	}
