@@ -9,6 +9,7 @@ set(
   map.cpp map.hpp
   Game.cpp Game.hpp
   InputHandler.hpp
+  FontManager.cpp FontManager.hpp
 
   # Scenes
   Scene.cpp Scene.hpp

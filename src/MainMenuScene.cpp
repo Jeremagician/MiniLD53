@@ -4,7 +4,7 @@ using namespace sf;
 
 MainMenuScene::MainMenuScene(void)
 {
-	temp_font.loadFromFile("data/DroidSansMono.ttf");
+	font = FontManager::getInstance().getFont("data/DroidSansMono.ttf", true);
 }
 
 MainMenuScene::~MainMenuScene(void)
@@ -19,7 +19,7 @@ void MainMenuScene::update(float delta)
 
 void MainMenuScene::draw(sf::RenderTarget &target, sf::RenderStates states) const
 {
-	Text text("Hello World !", temp_font, 64);
+	Text text("Hello World !", *font, 64);
 	RectangleShape bg;
 
 	bg.setSize(Vector2f(target.getSize().x, target.getSize().y));

@@ -11,7 +11,8 @@ using namespace sf;
 Game::Game(int argc, char** argv)
 	: running(true)
 {
-	mainWindow.create(VideoMode(800, 600), "MiniLD 53");
+	// We open at best resolution possible
+	mainWindow.create(VideoMode::getDesktopMode(), "MiniLD 53");
 	currentScene = make_shared<MainMenuScene>();
 }
 
