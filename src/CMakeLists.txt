@@ -7,6 +7,9 @@ set(
   minild_sources
   main.cpp
   map.cpp map.hpp
+  Game.cpp Game.hpp
+  InputHandler.hpp
+  Scene.cpp Scene.hpp
 )
 
 add_executable(
