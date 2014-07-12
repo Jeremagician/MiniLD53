@@ -2,8 +2,7 @@
 #include <iostream>
 #include "InputHandler.hpp"
 #include "Game.hpp"
-#include "version.hpp"
-
+#include "Version.hpp"
 #include "MainMenuScene.hpp"
 
 using namespace std;
@@ -17,7 +16,7 @@ Game::Game(int argc, char** argv)
 	string win_title =
 		string(GameTitle)
 		+ " - " + VERSION_NAME
-		+ " - " + VERSION_REVISION;
+	    + " " + VERSION_BRANCH + " " + VERSION_REVISION;
 
 	// We open at best resolution possible
 	mainWindow.create(VideoMode::getDesktopMode(), win_title);

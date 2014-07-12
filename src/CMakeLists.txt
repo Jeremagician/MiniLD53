@@ -11,6 +11,7 @@ set(
   Game.cpp Game.hpp
   InputHandler.hpp
   FontManager.cpp FontManager.hpp
+  TextureManager.cpp TextureManager.hpp
 
   # Scenes
   Scene.cpp Scene.hpp

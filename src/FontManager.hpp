@@ -10,16 +10,20 @@ typedef std::shared_ptr<sf::Font> FontPtr;
 class FontManager
 {
 public:
-	// Return font, if font is unknown
-	// an empty font is returned
-	// If load is set to true, font will be loaded
-	FontPtr getFont(std::string name, bool load=false);
+
+	FontPtr getFont(std::string path, bool load = false);
+
+	FontPtr load(std::string path);
+
+	bool isLoaded(std::string path);
+
+	// Return an empty font
+	FontPtr empty(void);
 
 	static FontManager& getInstance(void);
 
 private:
 	std::map<std::string, FontPtr> fonts;
-	FontPtr emptyFont;
 
 	FontManager();
 	~FontManager();
