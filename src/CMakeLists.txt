@@ -1,5 +1,6 @@
 include_directories(
   ${SFML_INCLUDE_DIR}
+  ${PROJECT_BINARY_DIR}/src
 )
 
 
@@ -7,6 +8,14 @@ set(
   minild_sources
   main.cpp
   map.cpp map.hpp
+  Game.cpp Game.hpp
+  InputHandler.hpp
+  FontManager.cpp FontManager.hpp
+  TextureManager.cpp TextureManager.hpp
+
+  # Scenes
+  Scene.cpp Scene.hpp
+  MainMenuScene.cpp MainMenuScene.hpp
 )
 
 add_executable(
