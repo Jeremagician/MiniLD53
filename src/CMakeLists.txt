@@ -9,7 +9,10 @@ set(
   map.cpp map.hpp
   Game.cpp Game.hpp
   InputHandler.hpp
+
+  # Scenes
   Scene.cpp Scene.hpp
+  MainMenuScene.cpp MainMenuScene.hpp
 )
 
 add_executable(

@@ -19,6 +19,8 @@ protected:
 	void update(float deltatime);
 	void render(void);
 
+	void stop(void);
+
 	sf::RenderWindow mainWindow;
 	bool running;
 

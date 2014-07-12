@@ -3,6 +3,8 @@
 #include "InputHandler.hpp"
 #include "Game.hpp"
 
+#include "MainMenuScene.hpp"
+
 using namespace std;
 using namespace sf;
 
@@ -10,6 +12,7 @@ Game::Game(int argc, char** argv)
 	: running(true)
 {
 	mainWindow.create(VideoMode(800, 600), "MiniLD 53");
+	currentScene = make_shared<MainMenuScene>();
 }
 
 Game::~Game()
@@ -39,6 +42,11 @@ void Game::loop(void)
 	}
 }
 
+void Game::stop(void)
+{
+	running = false;
+}
+
 void Game::processInput(void)
 {
 	Event e;
@@ -62,10 +70,10 @@ void Game::processInput(void)
 		{
 			// Window
 		case Event::Closed:
-			running = false;
+			stop();
 			break;
 		case Event::Resized:
-			// Not used
+			mainWindow.setView(View(FloatRect(0, 0, e.size.width, e.size.height)));
 			break;
 		case Event::LostFocus:
 			// Not used
@@ -77,6 +85,11 @@ void Game::processInput(void)
 			// Keyboard
 		case Event::KeyPressed:
 			if(ih != nullptr) ih->OnKeyDown(e.key);
+
+			// Makes the dev easier
+			if(e.key.code == Keyboard::Escape)
+				stop();
+
 			break;
 		case Event::KeyReleased:
 			if(ih != nullptr) ih->OnKeyUp(e.key);

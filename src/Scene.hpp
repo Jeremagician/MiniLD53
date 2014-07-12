@@ -14,7 +14,7 @@ public:
 	virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const override;
 
 	InputHandler::Ptr getInputHandler(void);
-	bool hasInputHandler(void);
+    bool hasInputHandler(void);
 
 protected:
 	void setInputHandler(InputHandler::Ptr inputHandler);
