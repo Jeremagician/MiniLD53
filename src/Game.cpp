@@ -2,17 +2,25 @@
 #include <iostream>
 #include "InputHandler.hpp"
 #include "Game.hpp"
+#include "version.hpp"
 
 #include "MainMenuScene.hpp"
 
 using namespace std;
 using namespace sf;
 
+#define GameTitle "MiniLD 53"
+
 Game::Game(int argc, char** argv)
 	: running(true)
 {
+	string win_title =
+		string(GameTitle)
+		+ " - " + VERSION_NAME
+		+ " - " + VERSION_REVISION;
+
 	// We open at best resolution possible
-	mainWindow.create(VideoMode::getDesktopMode(), "MiniLD 53");
+	mainWindow.create(VideoMode::getDesktopMode(), win_title);
 	currentScene = make_shared<MainMenuScene>();
 }
 

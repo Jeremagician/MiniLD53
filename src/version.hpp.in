@@ -1,0 +1,8 @@
+#ifndef VERSION_H_
+#define VERSION_H_
+
+#define VERSION_NAME "@VERSION_NAME@"
+#define VERSION_REVISION "@VERSION_REVISION@"
+#define VERSION_DATE "@VERSION_DATE@"
+
+#endif /* VERSION_H_ */

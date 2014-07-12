@@ -1,5 +1,6 @@
 include_directories(
   ${SFML_INCLUDE_DIR}
+  ${PROJECT_BINARY_DIR}/src
 )
 
 
