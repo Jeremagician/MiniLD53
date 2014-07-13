@@ -11,6 +11,10 @@ set(
   Game.cpp Game.hpp
   InputHandler.hpp
   FontManager.cpp FontManager.hpp
+  Hero.cpp Hero.h
+  Actors.cpp Actors.h
+  PresentHero.cpp PresentHero.h
+  PastHero.cpp PastHero.h
 
   # Scenes
   Scene.cpp Scene.hpp
