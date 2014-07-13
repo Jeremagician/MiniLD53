@@ -15,6 +15,7 @@ set(
   Actors.cpp Actors.h
   PresentHero.cpp PresentHero.h
   PastHero.cpp PastHero.h
+  TextureManager.cpp TextureManager.hpp
 
   # Scenes
   Scene.cpp Scene.hpp

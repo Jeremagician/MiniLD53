@@ -1,10 +1,19 @@
 #include "MainMenuScene.hpp"
+#include <exception>
 
 using namespace sf;
 
 MainMenuScene::MainMenuScene(void)
 {
-	font = FontManager::getInstance().getFont("data/DroidSansMono.ttf", true);
+	FontManager &mgr = FontManager::getInstance();
+	try
+	{
+		font = mgr.getFont("data/DroidSansMono.ttf", true);
+	}
+	catch(std::exception &e)
+	{
+		font = mgr.empty();
+	}
 }
 
 MainMenuScene::~MainMenuScene(void)
